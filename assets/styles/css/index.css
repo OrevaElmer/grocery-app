@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background: rgb(210, 244, 250);
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+}
+section .container{
+    position: relative;
+    background: #fff;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grocery-form{
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.alert{
+    width: 100%;
+    height: 32px;
+    line-height: 24px;
+    padding: 5px 0px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.alert-danger{
+    color: #721c24;
+    background: #f8d7da;
+}
+.alert-success{
+    color: #155724;
+    background: #d4edda;
+}
+.grocery-form .title{
+    font-size: 32px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 20px;
+}
+.grocery-form .form-control{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-control #grocery{
+    width: 80%;
+    padding: 10px;
+    border: 2px solid rgb(201, 222, 230);
+    background: rgb(201, 222, 230);
+    color: #333;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .5s ease;
+}
+.form-control #grocery:hover,
+.form-control #grocery:active{
+    border: 2px solid rgb(78, 128, 148);
+}
+.form-control .submit-btn{
+    padding: 10px;
+    width: 20%;
+    border: 2px solid rgb(112, 147, 161);
+    background: rgb(112, 147, 161);
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 16px;
+    transition: .5s ease;
+}
+.form-control .submit-btn:hover{
+    background: rgb(41, 104, 129);
+    border: 2px solid rgb(41, 104, 129);
+}
+.grocery-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+.clear-btn{
+    width: 100%;
+    padding: 5px 0px;
+    background: none;
+    color: rgb(207, 92, 57);
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+}
+.show-container{
+    visibility: visible;
+    transition: all .5s ease;
+}
+
+.grocery-list{
+    position: relative;
+    width: 100%;
+}
+.grocery-item{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.grocery-item .item{
+    padding: 5px 10px;
+    width: 80%;
+    pointer-events: none;
+    border: none;
+    font-size: 20px;
+}
+.grocery-item .button-container{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.grocery-item .button-container button{
+    padding: 5px;
+    outline: none;
+    border: none;
+    appearance: none;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.grocery-item .button-container .edit-btn{
+    color: green;
+}
+.grocery-item .button-container .delete-btn{
+    color: red;
+}
