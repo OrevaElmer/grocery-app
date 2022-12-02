@@ -30,7 +30,7 @@ const setBackToDefault = ()=>{
     grocery.value = ""
     editFlag = false
     editID = ''
-    submitBtn.textContent = "Add Item"
+    submitBtn.textContent = "Add"
 }
 
 /* LOCAL STORAGE */
