@@ -167,3 +167,8 @@ section .container{
 .grocery-item .button-container .delete-btn{
     color: red;
 }
+@media (max-width: 900px) {
+    section {
+        padding: 150px 50px;
+    }
+}

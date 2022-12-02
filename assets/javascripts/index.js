@@ -106,7 +106,7 @@ const editItem = (e)=>{
     //get the element id
     editID = element.dataset.id
     //change the submit text content
-    submitBtn.textContent = "Edit Item"
+    submitBtn.textContent = "Edit"
 }
 //set up items
 const setUpItems = ()=>{
